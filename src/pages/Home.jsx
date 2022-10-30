@@ -1,5 +1,5 @@
 import React from 'react'
-import Banners from '../components/banners/banners'
+import Banners from '../components/banners/Banners'
 import Category from '../components/category/Category'
 import ProductSlider from '../components/products/productSlider'
 
