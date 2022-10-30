@@ -219,7 +219,7 @@ html {
     color: #fff;
     padding: 3rem 3rem;
 
-    
+
 
     &__title {
         font-size: 1.5rem;
@@ -233,7 +233,7 @@ html {
         }
     }
 
- 
+
 
     &__input {
         width: 100%;
@@ -275,5 +275,18 @@ html {
         h6 {
             font-size: 1rem;
         }
+    }
+}
+
+.bigscreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    h1 {
+        font-size: 1.3rem;
     }
 }

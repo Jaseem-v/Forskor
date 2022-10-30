@@ -37,66 +37,73 @@ function App() {
   return (
 
     <main>
+      {matches ?
+        <>
+          {
+            ["/splash/login", "/splash/signup", "/splash", "/splash/otp"].includes(location.pathname) ?
+              null :
+              < Navbar />
+          }
 
-      {["/splash/login", "/splash/signup", "/splash", "/splash/otp"].includes(location.pathname) ?
-        null :
-        < Navbar />
-      }
+          < AlrtContainer />
 
-      <AlrtContainer />
+          <div className="App">
 
-      <div className="App">
 
-        {matches ?
 
-          <div>
-            <Routes>
-              <Route path="/" element={
-                <Home />
-              } />
+            <div>
+              <Routes>
+                <Route path="/" element={
+                  <Home />
+                } />
 
-              <Route path="/menu" element={
-                <Menu />
-              } />
-              <Route path="/splash/*" element={
-                <Splash />
-              } />
-              <Route path="/trackOrder" element={
-                <TrackOrder />
-              } />
-              <Route path="/cart" element={
-                <Cart />
-              } />
+                <Route path="/menu" element={
+                  <Menu />
+                } />
+                <Route path="/splash/*" element={
+                  <Splash />
+                } />
+                <Route path="/trackOrder" element={
+                  <TrackOrder />
+                } />
+                <Route path="/cart" element={
+                  <Cart />
+                } />
 
-              {/* <Route
+                {/* <Route
                 path="*"
                 element={<Navigate to="/" replace />}
               /> */}
 
-            </Routes>
+              </Routes>
 
-            {
-              ["/splash/login", "/splash/signup", "/splash", "/splash/otp"].includes(location.pathname) ?
-                null :
-                <div className="bottom-footer-navigation">
-                  <BottomFooterNavigation />
-                </div>
-            }
+              {
+                ["/splash/login", "/splash/signup", "/splash", "/splash/otp"].includes(location.pathname) ?
+                  null :
+                  <div className="bottom-footer-navigation">
+                    <BottomFooterNavigation />
+                  </div>
+              }
 
 
 
-            {bottomPanel &&
-              <BottomDetailsTab />
-            }
-          </div> :
+              {bottomPanel &&
+                <BottomDetailsTab />
+              }
+            </div>
+
+
+          </div >
+
+        </> :
+        <div className='bigscreen'>
           <h1>
-            site works only in mobile devices
 
+            site works only in mobile devices🥲
           </h1>
-        }
 
-
-      </div >
+        </div>
+      }
 
 
     </main>

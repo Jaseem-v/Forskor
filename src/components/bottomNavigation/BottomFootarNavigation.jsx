@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
 export default function BottomFooterNavigation() {
-    const [value, setValue] = React.useState('splash');
+    const [value, setValue] = React.useState('home');
 
     const navigate = useNavigate();
 
