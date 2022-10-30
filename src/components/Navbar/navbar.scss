@@ -1,0 +1,50 @@
+.navbar {
+    background: #205E54;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__search {
+        &-box {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            position: relative;
+
+        }
+
+        &-input {
+            width: 100%;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            padding: 0.8rem;
+            position: relative;
+            padding-left: 3rem;
+            font-size: 1.1rem;
+        }
+
+        &-icon {
+            // margin-right: -1rem;
+            color: #000;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+            left: 1rem;
+            z-index: 1;
+            font-size: 1.5rem;
+        }
+
+    }
+}

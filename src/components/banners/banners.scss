@@ -1,0 +1,12 @@
+.banner {
+    &__slide {
+        // background: red;
+        padding: 1rem;
+
+        img {
+        
+            box-shadow: 6px 11px 11px rgba(0, 0, 0, 0.14);
+            border-radius: 9px;
+        }
+    }
+}
